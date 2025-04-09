@@ -1,8 +1,14 @@
 # Assignment3-3
 Introduction to containers
 
+## Github secrets to store docker credentials
+![](Screenshot-dockerhub-credentials-in-repositorysecrets.png)
+
+## Docker in Dockerhub repository
+![](Screenshot-dockerhub-repository.png)
 
 
+## Workflow enabling build then push to dockerhub
 //
 
       name: Docker Build and Push to DockerHub
