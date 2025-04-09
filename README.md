@@ -9,7 +9,7 @@ Introduction to containers
 
 
 ## Workflow enabling build then push to dockerhub
-//
+```
 
       name: Docker Build and Push to DockerHub
       
@@ -41,4 +41,18 @@ Introduction to containers
                 push: true  # Push to registry after build
                 tags: |
                   ${{ secrets.DOCKERHUB_USERNAME }}/assignment3-3-flask:latest
-//
+```
+
+
+## Assignment
+Create a public repository in Github<br/>
+Commit your sample flask app to it, along with your Dockerfile & requirements.txt<br/>
+Set up a Github workflow such as any pushes to the main branch, will trigger a workflow to build and push your image to your DockerHub registry. <br/>
+You can use the following marketplace actions (Example usage: https://github.com/docker/build-push-action): <br/>
+- docker/login-action@v3 <br/>
+- docker/setup-buildx-action@v3<br/>
+- docker/build-push-action@v6<br/>
+
+Do not hardcode any credentials in your workflow file (Make use of Github Secrets and reference it in your workflow)<br/>
+Submission: Submit your github repository with your workflow<br/>
+
